@@ -1,5 +1,5 @@
 terraform {
-  required_version = "~> 1.2"
+  required_version = "~> 1.3"
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -8,9 +8,9 @@ terraform {
 
   backend "remote" {
     hostname     = "app.terraform.io"
-    organization = "twdps"
+    organization = "twks-cohort"
     workspaces {
-      prefix = "lab-platform-eks-base-"
+      prefix = "five-lab-platform-eks-base-"
     }
   }
 }
@@ -26,7 +26,7 @@ provider "aws" {
     tags = {
       env      = var.cluster_name
       cluster  = var.cluster_name
-      pipeline = "lab-platform-eks-base"
+      pipeline = "five-lab-platform-eks-base"
     }
   }
 }

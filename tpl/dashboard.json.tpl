@@ -1,7 +1,7 @@
 
 {
   "title": "EMPC lab-platform-eks-base",
-  "description": "[lab-platform-eks-base](https://github.com/ThoughtWorks-DPS/lab-platform-eks-base)",
+  "description": "[five-lab-platform-eks-base](https://github.com/twks-cohort/five-lab-platform-eks-base)",
   "widgets": [
     {
       "definition": {
