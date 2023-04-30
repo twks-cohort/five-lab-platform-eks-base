@@ -258,7 +258,7 @@ jobs:
           source-env: << parameters.source-env >>
       - set-kubeconfig:
           cluster: << parameters.cluster >>
-      - do/circle-deploy
+      #- do/circle-deploy
       
       - run:
           name: replace the oldest 1/4 of the nodes in the clister
@@ -311,7 +311,7 @@ workflows:
                 command: |
                   export KUBECONFIG=kubeconfig_nonprod-us-east-2
                   kubectl apply -f lab-system-namespace.yaml
-            - do/circle-deploy
+          #  - do/circle-deploy
             
           requires:
             - approve nonprod-us-east-2 changes
