@@ -7,4 +7,4 @@ terrform.*
 Pipfile.lock
 credentials
 *.ignore
-_123
+aws_credentials
