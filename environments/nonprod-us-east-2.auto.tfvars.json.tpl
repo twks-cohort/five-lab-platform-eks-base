@@ -3,7 +3,7 @@
     "aws_assume_role": "DPSPlatformEksBaseRole",
     "aws_account_id": "{{ op://cohorts/five-aws/aws-account-id }}",
 
-    "cluster_name": "sandbox-us-east-2",
+    "cluster_name": "nonprod-us-east-2",
     "cluster_version": "1.23",
     "cluster_enabled_log_types": ["api", "audit", "authenticator", "controllerManager", "scheduler"],
     "cluster_log_retention": "30",
